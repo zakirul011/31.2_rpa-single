@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quaker</title>
+	<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	Margin: 0 !important;
+	padding: 15px;
+	background-color: #DEE0E2;
+	line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{	
+	line-height: 1.2;
+}
+table {
+	border-spacing: 0;
+	font-family: "Helvetica Neue",'sans-serif', Arial;
+	color: #727f80;
+}
+td {
+    padding: 0;
+}
+.inner-td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #eee;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+.main-table {
+	width: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+.text-white{
+	color: #fff;
+}
+.content {
+    width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.text-start{
+	text-align: left !important;
+}
+.text-end{
+	text-align: right;
+}
+p {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+img {
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+h1{font-size: 60px;}
+h2{font-size: 46px;}
+h3{font-size: 30px;}
+h4{font-size: 25px;}
+h5{font-size: 18px;}
+
+.bg-attachment{
+	background-color: #ddd;
+	background-size: cover;
+	background-position: center center;
+}
+.w-100{
+	width: 100%;
+}
+.white-content h1,
+.white-content h2,
+.white-content h3,
+.white-content h4,
+.white-content h5,
+.white-content p{
+  color: #fff;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.theme-color{
+	color: var(--theme-color) !important;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    font-size: 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-column .content {
+    font-size: 16px;
+}
+
+/*--- Start Three Column Sections --*/
+.three-column {
+    font-size: 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 33.33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.three-column .content {
+    font-size: 16px;
+}
+
+/* col-8, col-4 */
+.two-one-column{
+    font-size: 0;
+}
+.two-one-column .section {
+    width: 100%;
+    max-width: 33.33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-one-column .section:first-child {
+    max-width: 66.66%;
+}
+.two-one-column .content {
+    font-size: 16px;
+}
+
+/* col-4, col-8 */
+.one-two-column{
+    font-size: 0;
+}
+.one-two-column .section {
+    width: 100%;
+    max-width: 33.33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.one-two-column .section:last-child {
+    max-width: 66.66%;
+}
+.one-two-column .content {
+    font-size: 16px;
+}
+
+/*================================================
+CUSTOM CSS
+================================================*/
+
+/*HEADER-AREA*/
+.header-area {
+	background-color: #F70000;
+}
+.logo{
+	background: #000;
+}
+
+.header-area h2 {
+	margin: 0;
+	padding: 4% 3%;
+}
+.logo {
+	background: #000;
+	padding: 15px;
+}
+/*HEADER-AREA END*/
+
+/*page content start*/
+.padding-round {
+	padding: 50px;
+}
+.info-list tr {
+  background: #FAFAFA;
+}
+.info-list{
+	width: 100%;
+}
+.info-list tr td {
+	font-weight: 700;
+	color: #000;
+	padding: 2% 5%;
+	font-size: 55px;
+}
+.info-list tr td span {
+	color: #F70000;
+	padding-right: 5%;
+}
+.info-list tr td span:first-child {
+	width: 45%;
+	display: inline-block;
+	white-space: nowrap;
+}
+.info-list-first tr td span:first-child {
+	width: 35%;
+}
+.info-title{
+	background: #F70000 !important;
+}
+.info-title td{
+	color: #fff !important;
+}
+.bottle-img {
+	border: 10px solid #FAFAFA;
+	text-align: center;
+	width: 100%;
+	padding: 20%;
+}
+.info-list tr:nth-child(2n) {
+  background: #fff;
+}
+.code {
+	background: #FAFAFA;
+	padding: 0 25%;
+	margin-top: 3%;
+}
+/*page content END*/
+
+
+
+
+	/*--- Responsive CSS --*/
+	@media screen and (max-width:767px) {
+		body {
+			padding: 0px !important;
+		}
+		img.img-responsive {
+			height:auto !important;
+		}
+		img.img-responsive,
+		.two-column .section,
+		.three-column .section,
+		.two-one-column .section,
+		.one-two-column .section {
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+		h1 {font-size: 40px !important;}
+		h2 {font-size: 22px !important;}
+		h4 {font-size: 18px !important;}
+		h5 {font-size: 14px !important;}
+		.logo {
+			text-align: center !important;
+			padding-bottom: 10px !important;
+		}
+		.mainmenu {
+			text-align: center !important;
+		}
+		.mainmenu li a {
+			font-size: 14px !important;
+			padding: 10px !important;
+		}
+		.padding-round {
+			padding: 30px 20px !important;
+		}
+.header-area h2 {
+	text-align: center;
+}
+.info-list tr td {
+	font-size: 22px;
+}
+.info-item {
+	width: 100%;
+	display: block;
+}
+.code {
+	padding: 0 18%;
+	margin-top: 5%;
+}
+
+	}
+
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="wrapper-inner">
+
+			<!-- header-area -->
+			<table class="main-table header-area">
+				<tr>
+					<td class="one-two-column">
+						<div class="section">
+							<table class="w-100">
+								<tr>
+									<td class="content inner-td logo">
+										<a href="#"><img src="./assets/logo.png" alt=""></a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="section">
+							<table class="w-100">
+								<tr>
+									<td class="content inner-td">
+										<h2 class="text-white">861 S, Great Southwest Plwy,  Grand Prairie TX, 7501</h2>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<!-- page content -->
+			<table class="main-table page-content">
+				<tr>
+					<td class="padding-round">
+						<table class="w-100">
+							<tr>
+								<td class="info-item">
+									<table class="info-list info-list-first">
+										<tr class="info-title">
+											<td>Bottle</td>
+										</tr>
+										<tr>
+											<td><span>Size</span> <span>:</span>5QT</td>
+										</tr>
+										<tr>
+											<td><span>Color</span> <span>:</span>Black</td>
+										</tr>
+									</table>
+								</td>
+								<td class="info-item">
+									<table class="bottle-img">
+										<tr>
+											<td>
+												<img src="./assets/img.png" alt="">
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="info-item">
+									<table class="info-list">
+										<tr>
+											<td><span>Operator</span><span>:</span>OP</td>
+										</tr>
+										<tr>
+											<td><span>Stacker</span><span>:</span>ST</td>
+										</tr>
+										<tr>
+											<td><span>Shift</span><span>:</span>S</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+
+						<table class="code">
+							<tr>
+								<td>
+									<img src="./assets/code.png" alt="">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	
+</body>
+</html>
